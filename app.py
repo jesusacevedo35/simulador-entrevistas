@@ -51,6 +51,9 @@ if "evaluation_report" not in st.session_state:
     st.session_state.evaluation_report = None
 
 # 4. Barra lateral: Configuración de Rol y Reinicio (Requerimiento A)
+# 4. Barra lateral: Configuración de Rol y Reinicio (Requerimiento A)
+modelo_gemini = "gemini-3.8-flash"
+
 with st.sidebar:
     st.header("⚙️ Panel de Control")
     
@@ -64,13 +67,6 @@ with st.sidebar:
     selected_role = st.selectbox(
         "Selecciona el rol al que postulas:",
         options=roles_disponibles,
-        on_change=reset_interview
-    )
-    
-    modelo_gemini = st.selectbox(
-        "Modelo de IA:",
-        options=["gemini-3.8-flash", "gemini-3.8-pro"],
-        index=0,
         on_change=reset_interview
     )
     
