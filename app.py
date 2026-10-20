@@ -69,8 +69,9 @@ with st.sidebar:
     
     modelo_gemini = st.selectbox(
         "Modelo de IA:",
-        options=["gemini-2.5-flash", "gemini-2.0-flash", "gemini-2.5-flash-lite"],
-        index=0
+        options=["gemini-3.8-flash", "gemini-3.8-pro"],
+        index=0,
+        on_change=reset_interview
     )
     
     st.markdown("---")
