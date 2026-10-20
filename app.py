@@ -52,7 +52,7 @@ if "evaluation_report" not in st.session_state:
 
 # 4. Barra lateral: Configuración de Rol y Reinicio (Requerimiento A)
 # 4. Barra lateral: Configuración de Rol y Reinicio (Requerimiento A)
-modelo_gemini = "gemini-3.8-flash"
+modelo_gemini = "gemini-3.5-flash"
 
 with st.sidebar:
     st.header("⚙️ Panel de Control")
